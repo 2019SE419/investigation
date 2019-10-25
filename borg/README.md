@@ -8,7 +8,7 @@
 
 ### workload
 
-![image-20191025113025152](/Users/sixplus/SJTU/internet/investigation/borg/borg-overview.png)
+![image-20191025113025152](./borg-overview.png)
 
 Borg cells内运行着各种各样workload的任务，主要分为两类：long-running services和batch jobs。workload在不同的cell内不尽相同，而且随着时间推移发生着变化。
 
@@ -18,7 +18,7 @@ Borg cells内运行着各种各样workload的任务，主要分为两类：long-
 
 ### jobs and tasks
 
-![image-20191025132532656](/Users/sixplus/SJTU/internet/investigation/borg/job-task.png)
+![image-20191025132532656](./job-task.png)
 
 job的属性有name, owner, and the number of tasks，除此之外还有对处理器结构和操作系统等参数的一些限制，但这些限制只是作为可选项而不像前面的属性那样是必选项。
 
@@ -92,7 +92,7 @@ It achieves high utilization by combining admission control, efficient task-pack
 
 ### availability
 
-![image-20191025163203222](/Users/sixplus/SJTU/internet/investigation/borg/availability.png)
+![image-20191025163203222](./availability.png)
 
 > Borgmaster uses a combination of techniques that enable it to achieve 99.99% availability in practice
 
